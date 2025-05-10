@@ -1,0 +1,17 @@
+#whoami {
+    background-color: rgb(206, 135, 20);
+    margin-top: 50px;
+}
+#whatami {
+    background-color: azure;
+}
+#whereami {
+    background-color: green;
+}
+.mountain {
+    width: 50%;
+    overflow: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
