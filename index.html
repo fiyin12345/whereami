@@ -13,12 +13,17 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     </head>
     <body>
-        <nav class="navbar fixed-top navbar-expand-md bg-light navbar-light">
+        <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="#whoami" class="nav-link">Who?</a></li>
             <li class="nav-item"><a href="#whatami" class="nav-link">What?</a></li>
             <li class="nav-item"><a href="#whereami" class="nav-link">Where?</a></li>
             </ul>
+            </div>
         </nav>
      <div class="container-fluid text-center" id="whoami">
         <h2>Who am I?</h2>
@@ -28,7 +33,29 @@
      <div class="container-fluid text-center" id="whatami">
         <h2>What am I?</h2>
         <p>I love to go out hiking and cycling with my friends.</p>
-        <a href="#" class="btn btn-outline-info"><span class="fa fa-search"></span> Search</a>
+        <a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#ipswich"><span class="fa fa-search"></span> Search</a>
+     </div>
+     <div class="modal" id="ipswich">
+     <div class="modal-dialog">
+     <div class="modal-content">
+     <div class="modal-header">
+     <h2>
+        Ipswich Town FC
+     </h2>
+     <button class="close" data-dismiss="modal"> 
+     <span>
+        &times;
+     </span>
+     </button>
+     </div>
+     <div class="modal-body">
+
+     </div>
+     <div class="modal-footer">
+
+     </div>
+     </div>
+     </div>
      </div>
      <div class="container-fluid text-center" id="whereami">
         <h2>Where am I?</h2>
