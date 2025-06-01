@@ -11,6 +11,9 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <!-- carousal bootstrap links -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
@@ -25,6 +28,18 @@
             </ul>
             </div>
         </nav>
+        <div class="carousel slide" data-ride="carousel" id="show">
+            <ul class="carousel-indicators">
+            <li data-target="#show" data-slide-to="0" class="active"></li>
+            <li data-target="#show" data-slide-to="1"></li>
+            <li data-target="#show" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+            <div class="carousel-item"><img src="nature 1.jpg" class="active"></div>
+            <div class="carousel-item"><img src="nature 2.jpg"></div>
+            <div class="carousel-item"><img src="nature 3.jpg"></div>
+            </div>
+        </div>
      <div class="container-fluid text-center" id="whoami">
         <h2>Who am I?</h2>
         <img src="hiking.jpeg" class="img-fluid rounded-circle">
@@ -36,45 +51,38 @@
         <a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#ipswich"><span class="fa fa-search"></span> Search</a>
      </div>
      <div class="modal" id="ipswich">
-     <div class="modal-dialog">
-     <div class="modal-content">
-     <div class="modal-header">
-     <h2>
-        Ipswich Town FC
-     </h2>
-     <button class="close" data-dismiss="modal"> 
-     <span>
-        &times;
-     </span>
-     </button>
-     </div>
-     <div class="modal-body">
-     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-5">
-         <img src="ipswich.jpg" class="img-reponsive img-fluid">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h2>
+           Ipswich Town FC
+        </h2>
+        <button class="close" data-dismiss="modal"> 
+        <span>
+           &times;
+        </span>
+        </button>
         </div>
-        <div class="col-sm-7">
-         <p>
-            Ipswich Town Football Club is a proffesional football club situated in a county town called Ipswich.
-            They are currently 19th in the Premier League and are sadly guranteed to be relegated. Their biggest
-            rivals are Norwich City Football Club which is situated in the county town called Norwich. Last time we
-            played Norwich, we lost 1-0, which was more than a year ago. Norwich are currently 13th in the championship.
-
-        </p>
-        </div>
-      </div>
-     </div>
-     </div>
-     <div class="modal-footer">
-     <button class="btn btn-outline-danger" data-dismiss="modal">
-         Okay
-     </button>
-     </div>
-     </div>
-     </div>
-     </div>
-     <div class="container-fluid text-center" id="whereami">
+        <div class="modal-body">
+        <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5">
+            <img src="ipswich.jpg" class="img-reponsive img-fluid">
+           </div>
+           <div class="col-sm-7">
+            <p>Ipswich Town Football Club is a professional football club based in Ipswich, Suffolk, England. The club currently competes in the Premier League, the top tier of English football, but will play in the Championship in the 2025–26 season following relegation.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+             <button class="close btn btn-success" data-dismiss="modal">
+             Ok
+             </button>
+            </div>
+            </div>
+            </div>
+            </div>
         <h2>Where am I?</h2>
         <div class="row">
         <div class="col-sm-4 mountain">
