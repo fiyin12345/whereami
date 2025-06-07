@@ -15,3 +15,9 @@
 html {
     scroll-behavior: smooth;
 }
+.carousel-inner img {
+    width: 100%;
+}
+.carousel-item {
+    height: 600px;
+}

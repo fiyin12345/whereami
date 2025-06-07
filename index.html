@@ -14,6 +14,9 @@
         <!-- carousal bootstrap links -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- this is for the lightbox -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
@@ -35,10 +38,34 @@
             <li data-target="#show" data-slide-to="2"></li>
             </ul>
             <div class="carousel-inner">
-            <div class="carousel-item"><img src="nature 1.jpg" class="active"></div>
+            <div class="carousel-item active"><img src="nature 1.jpg"></div>
             <div class="carousel-item"><img src="nature 2.jpg"></div>
             <div class="carousel-item"><img src="nature 3.jpg"></div>
             </div>
+            <a href="#show" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#show" class="carousel-control-next" data-slide="next">
+             <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <!-- lightbox -->
+        <div id="box" class="row" data-toggle="modal" data-target="#nature">
+        <div class="col-sm-3">
+            <img src="nature 4.jpg" class="w-100" data-slide-to="0" data-target="">
+        </div>
+        <div class="col-sm-3">
+            <img src="nature 5.jpg" class="w-100" data-slide-to="1" data-target="">
+        </div>
+        <div class="col-sm-3">
+            <img src="nature 6.jpg" class="w-100" data-slide-to="2" data-target="">
+        </div>
+        <div class="col-sm-3">
+            <img src="nature 7.jpg" class="w-100" data-slide-to="3" data-target="">
+        </div>
+        </div>
+        <div class="modal" id="nature">
+
         </div>
      <div class="container-fluid text-center" id="whoami">
         <h2>Who am I?</h2>
